@@ -1,0 +1,81 @@
+
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center-align text by default */
+    background-color: aquamarine;
+}
+
+/* Styling for the header */
+h1 {
+    height: 60px;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    line-height: 60px; /* Vertically center text */
+}
+
+/* Container for the choices */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 50px;
+}
+
+/* Individual choice styling */
+.choice {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 5px;
+    transition: border 0.1s; /* Smooth transition for border on hover */
+}
+
+.choice:hover {
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+/* Styling for images */
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Scoreboard styling */
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 2rem 0; /* Combine margin-top and margin-bottom */
+    gap: 3rem;
+}
+
+/* Specific styling for user and computer score */
+#user, #com {
+    font-size: 4rem;
+}
+
+/* Message styling */
+.msg {
+    margin-top: 20px;
+}
+
+/* Specific styling for the "your" element */
+#your {
+    margin-top: 20px;
+    background-color: rgb(61, 57, 57);
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    display: inline-block; /* Ensure it's treated as a block with padding */
+    border-radius: 1rem;
+}
